@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Alam Nusantara</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ================= HEADER + NAVBAR ================= -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center py-3 px-4">
+        <h1 class="text-xl font-bold">Wisata Majalengka</h1>
+
+        <nav>
+            <button class="md:hidden text-2xl" id="navToggle">☰</button>
+
+            <ul id="navMenu" class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#beranda" class="hover:text-blue-500">Beranda</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#obyek" class="hover:text-blue-500">Obyek Wisata</a></li>
+                <li><a href="#fasilitas" class="hover:text-blue-500">Fasilitas</a></li>
+                <li><a href="#paket" class="hover:text-blue-500">Paket Wisata</a></li>
+                <li><a href="#pemesanan" class="hover:text-blue-500">Pemesanan</a></li>
+                <li><a href="#galeri" class="hover:text-blue-500">Galeri</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= BANNER FOTO ================= -->
+<section id="beranda" class="pt-20">
+    <div class="relative w-full h-72 md:h-96 overflow-hidden">
+        <div class="banner-slider h-full w-full flex transition-all duration-700">
+            <img src="assets/img/banner1.jpg" class="w-full object-cover">
+            <img src="assets/img/banner2.jpg" class="w-full object-cover">
+            <img src="assets/img/banner3.jpg" class="w-full object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+    <p class="text-gray-700 leading-relaxed">
+        Kami menyediakan layanan wisata terbaik dengan pengalaman tak terlupakan,
+        mulai dari wisata alam, budaya, hingga petualangan menarik.
+    </p>
+</section>
+
+<!-- ================= OBYEK WISATA ================= -->
+<section id="obyek" class="py-16 bg-white container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Obyek Wisata</h2>
+    <p class="text-gray-700">
+        Banyak destinasi menarik yang dapat Anda kunjungi bersama keluarga.
+    </p>
+</section>
+
+<!-- ================= FASILITAS ================= -->
+<section id="fasilitas" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Fasilitas Wisata</h2>
+    <p class="text-gray-700">Kami menyediakan fasilitas lengkap untuk kenyamanan pengunjung.</p>
+</section>
+
+<!-- ================= PAKET WISATA ================= -->
+<section id="paket" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Paket Wisata</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <!-- CARD 1 -->
+            <div class="bg-gray-50 shadow rounded overflow-hidden">
+                <img src="assets/img/paket1.jpg" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Paket Pendakian Gunung Ciremai</h3>
+                    <p class="text-sm text-gray-600 mb-2">Tersedia setiap hari</p>
+                    <p class="text-lg font-bold text-green-600 mb-3">Rp 50.000</p>
+                    <button class="w-full py-2 bg-blue-600 text-white rounded">Pesan Sekarang</button>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="bg-gray-50 shadow rounded overflow-hidden">
+                <img src="assets/img/paket2.jpg" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Panyaweuyan</h3>
+                    <p class="text-sm text-gray-600 mb-2">Setiap hari pukul 08.00</p>
+                    <p class="text-lg font-bold text-green-600 mb-3">Diskon 20%</p>
+                    <button class="w-full py-2 bg-blue-600 text-white rounded">Pesan Sekarang</button>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="bg-gray-50 shadow rounded overflow-hidden">
+                <img src="assets/img/paket3.jpg" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-xl mb-2">Situ Cipanten</h3>
+                    <p class="text-sm text-gray-600 mb-2">Tersedia weekday & weekend</p>
+                    <p class="text-lg font-bold text-green-600 mb-3">Rp 15.000</p>
+                    <button class="w-full py-2 bg-blue-600 text-white rounded">Pesan Sekarang</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= PEMESANAN ================= -->
+<section id="pemesanan" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">Pemesanan</h2>
+    <p class="text-gray-700">Hubungi kami untuk pemesanan paket wisata.</p>
+</section>
+
+<!-- ================= VIDEO YOUTUBE ================= -->
+<section id="galeri" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">Video Wisata</h2>
+
+    <div class="flex justify-center">
+        <iframe width="100%" height="350" class="md:w-2/3 rounded shadow"
+            src="https://www.youtube.com/embed/XzOmYPCwBGs?si=AdadUnZjBdrgDNak"
+            title="YouTube video player" frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-6 bg-gray-800 text-white mt-10">
+    <p>© 2025 Wisata Nusantara</p>
+</footer>
+
+<!-- JS -->
+<script src="assets/script.js"></script>
+
+</body>
+</html>
